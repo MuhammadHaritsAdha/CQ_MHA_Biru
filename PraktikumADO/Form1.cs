@@ -56,5 +56,10 @@ namespace PraktikumADO
             conn.Close();
         }
 
+        private void btnHitungMk_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
