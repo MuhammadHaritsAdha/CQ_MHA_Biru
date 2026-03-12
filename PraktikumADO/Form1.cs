@@ -29,7 +29,9 @@ namespace PraktikumADO
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
-
+            Koneksi();
+            conn.Open();
+            MessageBox.Show("Koneksi ke database Berhasil");
         }
 
     }
