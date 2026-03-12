@@ -15,5 +15,12 @@ namespace PraktikumADO
             InitializeComponent();
         }
 
+        private void Koneksi()
+        {
+            conn = new SqlConnection(
+                "Data Source=RITS;Initial Catalog=DBAkademikADO;Integrated Security=True"
+            );
+        }
+
     }
 }
