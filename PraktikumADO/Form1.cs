@@ -49,6 +49,11 @@ namespace PraktikumADO
             string query = "SELECT COUNT(*) FROM Mahasiswa";
 
             cmd = new SqlCommand(query, conn);
+
+            int jumlah = (int)cmd.ExecuteScalar();
+            txtHasil.Text = jumlah.ToString();
+
+            conn.Close();
         }
 
     }
